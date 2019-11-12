@@ -165,7 +165,15 @@ extension MapViewController
         }
 
         mapView.deselectAnnotation(annotation, animated: false)
-        print( "show pin detail!" )
+        
+        let vc = PhotosViewController.instantiate() as! PhotosViewController
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem( title: "OK",
+                                                            style: .plain,
+                                                            target: nil,
+                                                            action: nil)
+
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func remove( annotation: MKAnnotation? ) {

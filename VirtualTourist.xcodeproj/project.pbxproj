@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB8186A9237A16F60062FD17 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8186A8237A16F60062FD17 /* PhotosViewController.swift */; };
+		BB8186AC237A174F0062FD17 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8186AB237A174F0062FD17 /* UIViewController.swift */; };
+		BB8186AE237A17770062FD17 /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8186AD237A17770062FD17 /* UIStoryboard.swift */; };
+		BB8186B1237B25350062FD17 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8186B0237B25350062FD17 /* PhotosCollectionViewCell.swift */; };
 		BBD172F8235530FD00023B4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD172F7235530FD00023B4E /* AppDelegate.swift */; };
 		BBD172FA235530FD00023B4E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD172F9235530FD00023B4E /* MapViewController.swift */; };
 		BBD172FD235530FD00023B4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBD172FB235530FD00023B4E /* Main.storyboard */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB8186A8237A16F60062FD17 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		BB8186AB237A174F0062FD17 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		BB8186AD237A17770062FD17 /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
+		BB8186B0237B25350062FD17 /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
 		BBD172F4235530FD00023B4E /* VirtualTourist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualTourist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD172F7235530FD00023B4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBD172F9235530FD00023B4E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +45,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB8186AA237A171E0062FD17 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB8186AB237A174F0062FD17 /* UIViewController.swift */,
+				BB8186AD237A17770062FD17 /* UIStoryboard.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BB8186AF237B24FA0062FD17 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BB8186B0237B25350062FD17 /* PhotosCollectionViewCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
 		BBD172EB235530FD00023B4E = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +82,9 @@
 			isa = PBXGroup;
 			children = (
 				BBD173092355314000023B4E /* Application Delegate */,
+				BB8186AA237A171E0062FD17 /* Extensions */,
 				BBD1730A2355314E00023B4E /* View Controllers */,
+				BB8186AF237B24FA0062FD17 /* Custom Cells */,
 				BBD1730E23554DF200023B4E /* Utilities */,
 				BBD1730B2355316100023B4E /* Storyboards */,
 				BBD172FE2355310800023B4E /* Assets.xcassets */,
@@ -78,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				BBD172F9235530FD00023B4E /* MapViewController.swift */,
+				BB8186A8237A16F60062FD17 /* PhotosViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -170,9 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB8186AE237A17770062FD17 /* UIStoryboard.swift in Sources */,
+				BB8186B1237B25350062FD17 /* PhotosCollectionViewCell.swift in Sources */,
 				BBD1730D23554DE800023B4E /* MapRegionUtil.swift in Sources */,
+				BB8186A9237A16F60062FD17 /* PhotosViewController.swift in Sources */,
 				BBD172FA235530FD00023B4E /* MapViewController.swift in Sources */,
 				BBD172F8235530FD00023B4E /* AppDelegate.swift in Sources */,
+				BB8186AC237A174F0062FD17 /* UIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
